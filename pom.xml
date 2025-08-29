@@ -10,10 +10,10 @@
 	</parent>
 
 	<groupId>com.example</groupId>
-	<artifactId>learning-openfeign</artifactId>
+	<artifactId>learning-kafka</artifactId>
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
-	<name>learning-openfeign</name>
+	<name>learning-kafka</name>
 	<description>Demo project for Spring Boot</description>
 
 	<url/>
@@ -25,10 +25,10 @@
 	</developers>
 
 	<modules>
-		<module>service-category</module>
 		<module>service-product</module>
 		<module>gateway</module>
 		<module>eureka</module>
+		<module>service-order</module>
 	</modules>
 
 	<scm>
@@ -49,13 +49,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<version>3.4.4</version>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>

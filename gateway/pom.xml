@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.example</groupId>
-        <artifactId>learning-openfeign</artifactId>
+        <artifactId>learning-kafka</artifactId>
         <version>1.0.0</version>
     </parent>
     <artifactId>gateway</artifactId>

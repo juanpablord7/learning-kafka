@@ -9,10 +9,12 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Category {
-    private long id;
+public class OrderKafka {
+    private Long id;
 
-    private String name;
+    private Long productId;
 
-    private String image;
+    private Long quantity;
+
+    private Long price;
 }

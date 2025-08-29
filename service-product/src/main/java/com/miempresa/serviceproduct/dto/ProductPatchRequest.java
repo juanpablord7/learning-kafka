@@ -2,11 +2,13 @@ package com.miempresa.serviceproduct.dto;
 
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProductPatchRequest {
@@ -21,4 +23,7 @@ public class ProductPatchRequest {
 
     @Size(min = 4, message = "The image must contain at least 4 letters")
     private String image;
+
+    @PositiveOrZero(message = "Stock must be positive or zero")
+    private Long stock;
 }

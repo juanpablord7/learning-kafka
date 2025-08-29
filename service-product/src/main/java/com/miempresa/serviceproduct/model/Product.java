@@ -38,4 +38,8 @@ public class Product {
     private String image;
 
     private Long category;
+
+    @PositiveOrZero(message = "The stoke must be positive or zero")
+    @Column(nullable = false)
+    private Long stock;
 }
